@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name ="Health plans and dental coverage" parallel="tests">
+    <parameter name="url" value="https://www.aetna.com"/>
+    <test name = "Home Page Search">
+        <classes>
+            <class name = "homePage.Search"/>
+        </classes>
+    </test>
+
+</suite>
+

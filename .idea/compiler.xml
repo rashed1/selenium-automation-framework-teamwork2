@@ -22,10 +22,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="AetnaHealth" />
         <module name="Generic" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="AetnaHealth" target="1.5" />
       <module name="Generic" target="1.5" />
       <module name="selenium-automation-framework-teamwork" target="1.5" />
     </bytecodeTargetLevel>
