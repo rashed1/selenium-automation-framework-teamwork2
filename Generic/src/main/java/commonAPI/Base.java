@@ -20,7 +20,7 @@ import java.util.concurrent.TimeUnit;
  * Created by Rashed on 12/30/2015.
  */
 public class Base {
-    private WebDriver driver = null;
+    public WebDriver driver = null;
 
     @Parameters({"url"})
 
