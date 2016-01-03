@@ -34,6 +34,26 @@
         </dependencies>
     </dependencyManagement>
 
+    <profiles>
+        <profile>
+            <id>AetnaHealth-app</id>
+            <modules>
+            <module>Generic</module>
+            <module>AetnaHealth</module>
+            </modules>
+        </profile>
+
+        <profile>
+            <id>random-app</id>
+            <modules>
+            <module>Generic</module>
+            <module>RandomApp</module>
+            </modules>
+        </profile>
+
+
+    </profiles>
+
 
 </project>
 
