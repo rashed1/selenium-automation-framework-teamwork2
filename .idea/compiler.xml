@@ -23,12 +23,16 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="AetnaHealth" />
+        <module name="browser-driver" />
         <module name="Generic" />
+        <module name="RandomApp" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="AetnaHealth" target="1.5" />
+      <module name="browser-driver" target="1.5" />
       <module name="Generic" target="1.5" />
+      <module name="RandomApp" target="1.5" />
       <module name="selenium-automation-framework-teamwork" target="1.5" />
     </bytecodeTargetLevel>
   </component>

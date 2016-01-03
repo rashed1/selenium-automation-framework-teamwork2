@@ -7,8 +7,10 @@ import org.testng.annotations.Test;
  * Created by Rashed on 1/2/2016.
  */
 public class Search extends Base {
-    //@Test
-    public void test1(){
+    @Test
+    public void test1() throws InterruptedException{
+
+        sleepFor(3);
         clickOnCss("#globalSearch");
         typeByCss("#globalSearch", "insurance");
         keysInput("#globalSearch");
@@ -16,11 +18,11 @@ public class Search extends Base {
     }
 
 
-    @Test
+   @Test
     public void test2() throws InterruptedException{
-        clickByXpath("html/body/div[2]/div[2]/header/div/div/div/nav/ul/li[4]/a");
+        typeByXpath("html/body/div[2]/div[2]/header/div/div/div/nav/ul/li[4]/a");
         System.out.println(driver.getCurrentUrl());
-        clickByXpath(".//*[@id='main']/div/div[1]/div/div/div[2]/div/div");
+        typeByXpath(".//*[@id='main']/div/div[1]/div/div/div[2]/div/div");
 
 
         driver.navigate().to("http://www.aetna.com/dse/search?site_id=dse");

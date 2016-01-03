@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+    <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name ="Health plans and dental coverage" parallel="tests">
+<suite name="Health plans and dental coverage" parallel="tests">
+
+<!-- 
+    <parameter name="useCloudEnv" value="true"/>
+    <parameter name="userName" value="rashed1"/>
+    <parameter name="key" value="2601a7b6-4b39-4712-992a-59ddcd85694c"/>
+    <parameter name="os" value="Windows 10"/>
+    <parameter name="browser" value="firefox"/>
+    <parameter name="browserVersion" value="43.0"/>
+    -->
+
     <parameter name="url" value="https://www.aetna.com"/>
+
+
     <test name = "Home Page Search">
         <classes>
             <class name = "homePage.Search"/>
